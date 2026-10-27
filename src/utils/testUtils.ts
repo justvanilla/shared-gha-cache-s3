@@ -42,4 +42,7 @@ export function clearInputs(): void {
     delete process.env[getInputName(Inputs.EnableCrossOsArchive)];
     delete process.env[getInputName(Inputs.FailOnCacheMiss)];
     delete process.env[getInputName(Inputs.LookupOnly)];
+    delete process.env[getInputName(Inputs.AwsAccessKeyId)];
+    delete process.env[getInputName(Inputs.AwsSecretAccessKey)];
+    delete process.env[getInputName(Inputs.AwsRegion)];
 }

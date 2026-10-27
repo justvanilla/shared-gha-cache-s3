@@ -1,5 +1,9 @@
 # Releases
 
+### 3.4.0
+
+- Support the AWS SDK default credential chain when AWS access key inputs are omitted.
+
 ### 3.0.0
 
 - Updated minimum runner version support from node 12 -> node 16

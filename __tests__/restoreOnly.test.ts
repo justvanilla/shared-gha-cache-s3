@@ -83,7 +83,6 @@ test("restore with no cache found", async () => {
             lookupOnly: false
         },
         {
-            credentials: { accessKeyId: "", secretAccessKey: "" },
             forcePathStyle: true,
             region: ""
         },
@@ -130,7 +129,6 @@ test("restore with restore keys and no cache found", async () => {
             lookupOnly: false
         },
         {
-            credentials: { accessKeyId: "", secretAccessKey: "" },
             forcePathStyle: true,
             region: ""
         },
@@ -174,7 +172,6 @@ test("restore with cache found for key", async () => {
             lookupOnly: false
         },
         {
-            credentials: { accessKeyId: "", secretAccessKey: "" },
             forcePathStyle: true,
             region: ""
         },
@@ -222,7 +219,6 @@ test("restore with cache found for restore key", async () => {
             lookupOnly: false
         },
         {
-            credentials: { accessKeyId: "", secretAccessKey: "" },
             forcePathStyle: true,
             region: ""
         },

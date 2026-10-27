@@ -1,10 +1,10 @@
 import * as core from "@actions/core";
 import * as cache from "github-actions.cache-s3";
-import { getConfig } from "github-actions.cache-s3/lib/internal/config";
 
 import { Events, Inputs, Outputs, State } from "./constants";
 import { IStateProvider } from "./stateProvider";
 import * as utils from "./utils/actionUtils";
+import { getS3Config } from "./utils/s3Config";
 
 async function restoreImpl(
     stateProvider: IStateProvider
@@ -35,11 +35,7 @@ async function restoreImpl(
         const failOnCacheMiss = utils.getInputAsBool(Inputs.FailOnCacheMiss);
         const lookupOnly = utils.getInputAsBool(Inputs.LookupOnly);
         const s3Bucket = core.getInput(Inputs.AwsBucket);
-        const s3Config = getConfig(
-            core.getInput(Inputs.AwsRegion),
-            core.getInput(Inputs.AwsAccessKeyId),
-            core.getInput(Inputs.AwsSecretAccessKey)
-        );
+        const s3Config = getS3Config();
 
         const cacheKey = await cache.restoreCache(
             cachePaths,

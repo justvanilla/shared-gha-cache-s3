@@ -110,7 +110,6 @@ test("save with valid inputs uploads a cache", async () => {
             uploadChunkSize: 4000000
         },
         {
-            credentials: { accessKeyId: "", secretAccessKey: "" },
             forcePathStyle: true,
             region: ""
         },

@@ -73,6 +73,8 @@ If you are using a `self-hosted` Windows runner, `GNU tar` and `zstd` are requir
 * `aws-access-key-id` - key id for account having RW access to the bucket
 * `aws-secret-access-key` - secret for account having RW access to the bucket
 
+The AWS access key inputs are optional. When either is omitted or empty, the action uses the AWS SDK default credential chain, such as the runner's instance role or credentials configured with `aws-actions/configure-aws-credentials`.
+
 #### Environment Variables
 
 * `SEGMENT_DOWNLOAD_TIMEOUT_MINS` - Segment download timeout (in minutes, default `10`) to abort download of the segment if not completed in the defined number of minutes. [Read more](https://github.com/actions/cache/blob/main/tips-and-workarounds.md#cache-segment-restore-timeout)

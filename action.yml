@@ -30,11 +30,11 @@ inputs:
     description: 'An AWS S3 bucket to save cache'
     required: true
   aws-access-key-id:
-    description: 'An AWS access key id to access the bucket'
-    required: true
+    description: 'Optional AWS access key id. When omitted, the default AWS credential chain is used, for example the runner instance role.'
+    required: false
   aws-secret-access-key:
-    description: 'An AWS secret access key to access the bucket'
-    required: true
+    description: 'Optional AWS secret access key. When omitted, the default AWS credential chain is used, for example the runner instance role.'
+    required: false
   aws-region:
     description: 'An AWS region where the bucket is located'
     required: true
