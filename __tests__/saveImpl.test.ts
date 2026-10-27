@@ -171,7 +171,6 @@ test("save on GHES with AC available", async () => {
             uploadChunkSize: 4000000
         },
         {
-            credentials: { accessKeyId: "", secretAccessKey: "" },
             forcePathStyle: true,
             region: ""
         },
@@ -272,7 +271,6 @@ test("save with large cache outputs warning", async () => {
         primaryKey,
         expect.anything(),
         {
-            credentials: { accessKeyId: "", secretAccessKey: "" },
             forcePathStyle: true,
             region: ""
         },
@@ -324,7 +322,6 @@ test("save with reserve cache failure outputs warning", async () => {
         primaryKey,
         expect.anything(),
         {
-            credentials: { accessKeyId: "", secretAccessKey: "" },
             forcePathStyle: true,
             region: ""
         },
@@ -372,7 +369,6 @@ test("save with server error outputs warning", async () => {
         primaryKey,
         expect.anything(),
         {
-            credentials: { accessKeyId: "", secretAccessKey: "" },
             forcePathStyle: true,
             region: ""
         },
@@ -422,7 +418,6 @@ test("save with valid inputs uploads a cache", async () => {
             uploadChunkSize: 4000000
         },
         {
-            credentials: { accessKeyId: "", secretAccessKey: "" },
             forcePathStyle: true,
             region: ""
         },
